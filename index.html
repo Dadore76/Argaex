@@ -8,37 +8,57 @@
         <link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
-        <header id="header">
-            <!-- Logo -->
-            <div class="logo_container">
-                <div class="logo_img"><a href="index.html"><img src="./images/Logo-sf.png" alt="Logo" class="img_logo"></a></div>
-                <div class="nombre_img"><a href="index.html"><img src="./images/Nombre.png" alt="Nombre" class="img_nombre"></a></div>
-            </div>
+        
+        <nav class="nav container">
+            <img src="./images/Logo-sf.png" alt="Logo" class="nav_img">
+
+            <div class="nav_hamburguer"></div>
             
-           <!-- Nav Bar -->
-            <nav class="nav_bar">
-                <ul class="nav_links">
-                    <li><a href="#home" class="nav_link">Inicio</a></li>
-                    <li><a href="#about" class="nav_link">¿Quiénes Somos?</a></li>
-                    <li><a href="#contact" class="nav_link">Contacto</a></li>
+            <div class="nav_overlay">
+                <ul class="nav_menu">
+                    
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Inicio</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">¿Quiénes Somos?</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Contacto</a>
+                    </li>
+
                 </ul>
-            </nav>            
-        </header>
-
-        <section id="home">
-            <div class="body_1">
             </div>
-        </section>
+        </nav>
 
-        <section id="about">
-            <div class="body_2" id="about">
-            </div>
-        </section>
+        <main class="main">
+            <section class="main_grid">
+                <picture class="main_picture">
+                    <source srcset="./images/image-hero-desktop.png" class="main_img" media="(min-width:768px)">
+                    <img src="./images/image-hero-mobile.png" class="main_img">
+                </picture>
+                <article class="main_article">
+                    <div class="main_texts">
+                        <h1 class="main_title">
+                            Lorem, ipsum dolor.
+                        </h1>
+                        <p class="main_paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi aut, itaque modi corrupti veniam!
+                        </p>
+                        <a href="" class="main_cta">Learn more</a>
+                    </div>
+                    <div class="main_brands">
+                        <img src="./images/client-databiz.svg" alt="">
+                        <img src="./images/client-audiophile.svg" alt="">
+                        <img src="./images/client-meet.svg" alt="">
+                        <img src="./images/client-maker.svg" alt="">
+                    </div>
+                </article>
+            </section>
+        </main>
 
-        <footer>
-            <div id="contact">&copy;Copyright</div>
-        </footer>
-
-        <script src="./js/app.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
