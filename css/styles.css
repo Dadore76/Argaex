@@ -85,3 +85,142 @@ body {
 }
 
 /* Main */
+
+.main_grid {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-areas: 
+    "img img img"
+    ".  text .";
+}
+
+.main_article {
+    padding: 56px 0;
+    text-align: center;
+    grid-area: text;
+}
+
+.main_title {
+    font-size: 2rem;
+}
+
+.main_paragraph {
+    line-height: 1.5;
+    margin: 1.5em 0;
+}
+
+.main_cta {
+    background-color: #222;
+    color: #fff;
+    display: inline-block;
+    padding: .8em 1.5em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main_picture {
+    grid-area: img;
+    max-width: 400px;
+    margin:0 auto;
+    padding: 20px 0 0;
+}
+
+.main_img {
+    width:100%;
+}
+
+.main_brands {
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(30px, 100px);
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 80px;
+}
+
+.main_brand {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .nav {
+        gap: 2em;
+        overflow: visible;
+        padding: 5px 0 0;
+    }
+
+    .nav_hamburguer {
+        display: none;
+    }
+
+    .nav_overlay {
+        position: unset;
+        background-color: transparent;
+        opacity: 1;
+        pointer-events: unset;
+        flex: 1;
+    }
+
+    .nav_menu {
+        position: unset;
+        width: 100%;
+        max-width: unset;
+        padding: 0;
+        overflow: unset;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .nav_item {
+        width: max-content;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .main_grid {
+        margin: 0 auto;
+        max-width: 1440px;
+        width: 90%;
+        gap: 2em;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas: 
+        "text img";
+        padding: 70px 0;
+    }
+
+    .main_picture {
+        max-height: 500px;
+    }
+
+    .main_img {
+        height: 100%;
+    }
+
+    .main_article {
+        text-align: left;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_brands {
+        margin: auto 0 0 0;
+    }
+
+    .main_texts {
+        margin: auto 0;
+    }
+
+    .main_title {
+        font-size: 3.5rem;
+    }
+
+    .main_paragraph {
+        margin: 2em 0;
+    }
+}

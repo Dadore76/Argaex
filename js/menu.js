@@ -5,3 +5,4 @@ hamburguerIcon.addEventListener("click", () => {
     hamburguerIcon.classList.toggle("nav_hamburguer-open");
     navOverlay.classList.toggle("nav_overlay-show")
 })
+
